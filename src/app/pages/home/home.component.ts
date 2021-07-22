@@ -6,23 +6,19 @@ declare var $: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor(
-    private title: Title,
-    private meta: Meta
-    ) { 
-  }
+  constructor(private title: Title, private meta: Meta) {}
 
   ngOnInit(): void {
-    this.title.setTitle("Faro del Catatumbo - Inicio");
-    this.meta.updateTag({name: "description", content: ''});
+    this.title.setTitle('Faro del Catatumbo - Inicio');
+    this.meta.updateTag({ name: 'description', content: '' });
 
-    setTimeout(() => {      
-      $('#home').css({ 'height': ($(window).height()) + 'px' });
-      $(window).resize(function() {
-          $('#home').css({ 'height': ($(window).height()) + 'px' });
+    setTimeout(() => {
+      $('#home').css({ height: $(window).height() + 'px' });
+      $(window).resize(function () {
+        $('#home').css({ height: $(window).height() + 'px' });
       });
 
       init_slider();
@@ -32,5 +28,4 @@ export class HomeComponent implements OnInit {
   ngAfterContentInit(): void {
     console.log('ejecuta');
   }
-
 }

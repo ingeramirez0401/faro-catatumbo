@@ -1,1 +1,62 @@
-<p>contacto works!</p>
+<div id="contact">
+    <div class="parallax3"></div>
+    <div class="background-grid"></div>
+    <div class="container">
+        <div class="sixteen columns">
+            <div class="top-text">
+                <h1>Contacto</h1>
+                <div class="subline"></div>
+                <div class="top-subtext">Dejanos tus datos y te contactaremos.</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="ten columns">
+            <form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
+                <label for="name">Nombre: * 
+                    <span class="error" id="err-name">Por favor escriba un nombre</span>
+                </label>
+                <input name="name" id="name" type="text" />
+                <label for="email">Correo: * 
+                    <span class="error" id="err-email">Por favor escriba un correo</span>
+                    <span class="error" id="err-emailvld">Correo no es un formato valido</span>
+                </label>
+                <input name="email" id="email" type="text" />
+                <label for="message">Cuentanos:</label>
+                <textarea name="message" id="message"></textarea>
+                <div id="button-con"><button class="send_message" id="send">Enviar</button></div>
+                <div class="error text-align-center" id="err-form">Hubo un problema validando, por favor verifica</div>
+                <div class="error" id="err-state"></div>
+            </form>
+            <div id="ajaxsuccess">¡Formulario enviado!</div>
+        </div>
+        <div class="six columns">
+            <h5>Informacion de contacto</h5>
+            <div class="con-info">
+                <div class="con-icon">&#xf041;</div>
+                <a href="https://maps.google.com/" target="_blank">
+                    <p style="padding-top: 0;">Avenida 5 #13-82 Oficinas 206-208-210 Edificio Centro de Negocios Quinta Avenida</p>
+                </a>
+            </div>
+            <div class="con-info padding-top-con">
+                <div class="con-icon">&#xf007;</div>
+                <p style="padding-top: 0;">Lunes a viernes de 7:30 a.m. – 12:00 m a 2:00 p.m. – 6:00 p.m.</p>
+            </div>
+            <div class="con-info padding-top-con">
+                <div class="con-icon">&#xf095;</div>
+                <p>310-2214908</p>
+            </div>
+            <div class="con-info padding-top-con">
+                <div class="con-icon">&#xf0e0;</div>
+                <a href="#">
+                    <p>correo@correo.com</p>
+                </a>
+            </div>
+            <div class="con-info padding-top-con">
+                <div class="con-icon">&#xf0ac;</div>
+                <a href="#">
+                    <p>www.eicefarodelctatumbo.gov.co </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
