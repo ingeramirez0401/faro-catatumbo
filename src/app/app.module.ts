@@ -1,23 +1,22 @@
-import {BrowserModule, BrowserTransferStateModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {
+  BrowserModule,
+  BrowserTransferStateModule,
+} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import {AppRoutingModule} from './app-routing.module';
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { AppRoutingModule } from './app-routing.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import {HttpClientModule} from '@angular/common/http';
-import {AppShellRenderDirective} from "./directives/app-shell-render.directive";
-import {AppShellNoRenderDirective} from "./directives/app-shell-norender.directive";
+import { HttpClientModule } from '@angular/common/http';
+import { AppShellRenderDirective } from './directives/app-shell-render.directive';
+import { AppShellNoRenderDirective } from './directives/app-shell-norender.directive';
 
 // Components
-import {AppComponent} from './app.component';
+import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './pages/shared/footer/footer.component';
 import { HeaderComponent } from './pages/shared/header/header.component';
-
-// Pipes
-import { FeaturedNewPipe } from './pipes/featured-new.pipe';
-import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 import { QuienesSomosComponent } from './pages/quienes-somos/quienes-somos.component';
 import { FuncionesComponent } from './pages/funciones/funciones.component';
 import { OrganigramaComponent } from './pages/organigrama/organigrama.component';
@@ -25,7 +24,11 @@ import { LineasServicioComponent } from './pages/lineas-servicio/lineas-servicio
 import { TransparenciaComponent } from './pages/transparencia/transparencia.component';
 import { AtencionCiudadanoComponent } from './pages/atencion-ciudadano/atencion-ciudadano.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { AliadosComponent } from './pages/shared/aliados/aliados.component';
 
+// Pipes
+import { FeaturedNewPipe } from './pipes/featured-new.pipe';
+import { SafeHtmlPipe } from './pipes/safe-html.pipe';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     LineasServicioComponent,
     TransparenciaComponent,
     AtencionCiudadanoComponent,
-    ContactoComponent
+    ContactoComponent,
+    AliadosComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -52,10 +56,9 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
