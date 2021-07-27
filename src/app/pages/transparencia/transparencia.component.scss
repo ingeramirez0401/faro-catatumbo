@@ -2,6 +2,10 @@ a {
     cursor: pointer;
 }
 
+i {
+    color: rgb(241 43 80);
+}
+
 #about {
     margin-top: 40px;
 }
@@ -12,4 +16,8 @@ a {
 
 .paragraf-left {
     border-left: 3px solid rgb(241 43 80);
+}
+
+.der {
+    float: right;
 }
