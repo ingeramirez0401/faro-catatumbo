@@ -1,3 +1,43 @@
 #about {
     margin-top: 40px;
 }
+
+p {
+    margin-bottom: 1em;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.blog-post {
+    border-top: 3px solid rgb(241 43 80);
+}
+
+.paragraf-left {
+    border-left: 3px solid rgb(241 43 80);
+}
+
+a {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexsize {
+    flex-basis: 50%;
+}
+
+img {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flexsize {
+        flex-basis: 100%;
+    }
+}

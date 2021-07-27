@@ -31,18 +31,6 @@ const routes: Routes = [
     component: AtencionCiudadanoComponent,
   },
   {
-    path: 'funciones',
-    component: FuncionesComponent,
-  },
-  {
-    path: 'organigrama',
-    component: OrganigramaComponent,
-  },
-  {
-    path: 'servicios',
-    component: LineasServicioComponent,
-  },
-  {
     path: '**',
     pathMatch: 'full',
     redirectTo: 'inicio',
