@@ -29,6 +29,12 @@ import { AliadosComponent } from './pages/shared/aliados/aliados.component';
 // Pipes
 import { FeaturedNewPipe } from './pipes/featured-new.pipe';
 import { SafeHtmlPipe } from './pipes/safe-html.pipe';
+import { BancoOferentesComponent } from './pages/convocatorias/banco-oferentes/banco-oferentes.component';
+import { ConvocatoriasComponent } from './pages/convocatorias/convocatorias.component';
+import { ConfigService } from './services/config.service';
+import { RegisterService } from './services/register.service';
+import { ProcesosComponent } from './pages/convocatorias/procesos/procesos.component';
+import { P001Component } from './pages/convocatorias/procesos/p001/p001.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +54,10 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
     AtencionCiudadanoComponent,
     ContactoComponent,
     AliadosComponent,
+    BancoOferentesComponent,
+    ConvocatoriasComponent,
+    ProcesosComponent,
+    P001Component
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -56,9 +66,9 @@ import { SafeHtmlPipe } from './pipes/safe-html.pipe';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [RegisterService, ConfigService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

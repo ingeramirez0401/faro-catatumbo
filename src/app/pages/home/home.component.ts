@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 declare function init_slider();
 declare var $: any;
@@ -9,7 +10,7 @@ declare var $: any;
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private title: Title, private meta: Meta) {}
+  constructor(private title: Title, private meta: Meta, private router: Router) {}
 
   ngOnInit(): void {
     this.title.setTitle('Faro del Catatumbo - Inicio');
@@ -27,5 +28,9 @@ export class HomeComponent implements OnInit {
 
   ngAfterContentInit(): void {
     console.log('ejecuta');
+  }
+
+  goToConvocatoria() {
+    this.router.navigate(['/convocatorias']);
   }
 }

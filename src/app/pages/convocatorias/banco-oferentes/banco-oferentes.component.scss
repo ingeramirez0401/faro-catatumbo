@@ -1,0 +1,44 @@
+a {
+    cursor: pointer;
+}
+
+i {
+    color: rgb(241 43 80);
+}
+
+#about {
+    margin-top: 40px;
+}
+
+.blog-post {
+    border-top: 3px solid rgb(241 43 80);
+}
+
+.paragraf-left {
+    border-left: 3px solid rgb(241 43 80);
+}
+
+.der {
+    float: right;
+}
+
+label,
+input {
+    color: #000 !important;
+    font-family: 'OpenSans-Light-webfont' !important;
+}
+
+input[type=text] {
+    border-bottom: 1px solid #000 !important;
+    padding: 20px !important;
+}
+
+input[type=text]:focus {
+    color: #000 !important;
+    font-family: 'OpenSans-Light-webfont' !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+#registro_file {
+    padding: 20px !important;
+}
