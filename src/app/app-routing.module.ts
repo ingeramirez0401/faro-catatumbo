@@ -12,6 +12,7 @@ import { TransparenciaComponent } from './pages/transparencia/transparencia.comp
 import { BancoOferentesComponent } from './pages/convocatorias/banco-oferentes/banco-oferentes.component';
 import { ProcesosComponent } from './pages/convocatorias/procesos/procesos.component';
 import { P001Component } from './pages/convocatorias/procesos/p001/p001.component';
+import { P02Component } from './pages/convocatorias/procesos/p02/p02.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,7 @@ const routes: Routes = [
     component: ProcesosComponent,
     children: [
       { path: 'ip-fc-01-2021', component: P001Component },
+      { path: 'ip-fc-02-2021', component: P02Component },
       { path: '**', pathMatch: 'full', redirectTo: 'ip-fc-01-2021' }
     ]
   },
