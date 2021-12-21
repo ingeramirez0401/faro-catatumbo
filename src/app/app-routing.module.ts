@@ -13,6 +13,7 @@ import { BancoOferentesComponent } from './pages/convocatorias/banco-oferentes/b
 import { ProcesosComponent } from './pages/convocatorias/procesos/procesos.component';
 import { P001Component } from './pages/convocatorias/procesos/p001/p001.component';
 import { P02Component } from './pages/convocatorias/procesos/p02/p02.component';
+import { P03Component } from './pages/convocatorias/procesos/p03/p03.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,7 @@ const routes: Routes = [
     children: [
       { path: 'ip-fc-01-2021', component: P001Component },
       { path: 'ip-fc-02-2021', component: P02Component },
+      { path: 'ip-fc-03-2021', component: P03Component },
       { path: '**', pathMatch: 'full', redirectTo: 'ip-fc-01-2021' }
     ]
   },
