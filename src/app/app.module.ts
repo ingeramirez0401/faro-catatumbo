@@ -34,7 +34,10 @@ import { ConvocatoriasComponent } from './pages/convocatorias/convocatorias.comp
 import { ConfigService } from './services/config.service';
 import { RegisterService } from './services/register.service';
 import { ProcesosComponent } from './pages/convocatorias/procesos/procesos.component';
-import { P001Component } from './pages/convocatorias/procesos/p001/p001.component';
+import { P010Component } from './pages/convocatorias/procesos/p010/p010.component';
+import { P011Component } from './pages/convocatorias/procesos/p011/p011.component';
+import { P012Component } from './pages/convocatorias/procesos/p012/p012.component';
+import { P013Component } from './pages/convocatorias/procesos/p013/p013.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +60,10 @@ import { P001Component } from './pages/convocatorias/procesos/p001/p001.componen
     BancoOferentesComponent,
     ConvocatoriasComponent,
     ProcesosComponent,
-    P001Component
+    P010Component,
+    P011Component,
+    P012Component,
+    P013Component
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
