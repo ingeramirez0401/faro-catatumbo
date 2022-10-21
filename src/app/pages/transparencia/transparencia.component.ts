@@ -146,7 +146,7 @@ export class TransparenciaComponent implements OnInit {
       $('#gest').hide();
     });
     $('#ggest').click(function () {
-      $('#pol').show();
+      $('#pol').hide();
       $('#planes').hide();
       $('#man').hide();
       $('#gest').show();

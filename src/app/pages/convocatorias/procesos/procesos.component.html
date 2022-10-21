@@ -9,11 +9,17 @@
         <div class="four columns">
             <div class="sidebar">
                 <h6 class="titulo-normal">Invitaciones Públicas</h6>
-                <h6 class="titulo-normal">Procesos 2022</h6>
-                <div class="categories">
-                    <a id="gcont" routerLink="/procesos/ip-fc-01-2022">Proceso IP-FC-01-2022</a>
-                </div>
-                <div class="categories">
+                <ng-container *ngFor="let item of data">
+                    <h6 class="titulo-normal">{{item.year}}</h6>
+                    <div style="margin-bottom: 5%;">
+                        <ng-container *ngFor="let item2 of item.list">
+                            <div class="categories">
+                                <a (click)="getId(item2.id)">{{item2.name}}</a>
+                            </div>
+                        </ng-container>
+                    </div>
+                </ng-container>
+                <!--                 <div class="categories">
                     <a id="gcont" routerLink="/procesos/ip-fc-02-2022">Proceso IP-FC-02-2022</a>
                 </div>
                 <div class="categories">
@@ -49,12 +55,25 @@
                 </div>
                 <div class="categories">
                     <a id="gcont" routerLink="/procesos/ip-fc-05-2021">Proceso IP-FC-05-2021</a>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="twelve columns">
             <div class="blog-post">
-                <router-outlet></router-outlet>
+                <!-- <router-outlet></router-outlet> -->
+                <ng-container *ngFor="let year of data">
+                    <ng-container *ngFor="let item of year.list">
+                        <ng-container *ngIf="index == item.id">
+                            <p style="font-weight: 900;"><span>{{item.name}}</span></p>
+                            <p class="paragraf-left">{{item.description}}
+                                <span class="der">
+                                    <a [href]="item.secopLink" target="_blank"><i class="icon-blog"
+                                            style="margin-right: 10px;">&#xf06e;</i></a>
+                                </span>
+                            </p>
+                        </ng-container>
+                    </ng-container>
+                </ng-container>
             </div>
         </div>
     </div>
