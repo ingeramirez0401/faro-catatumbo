@@ -19,7 +19,10 @@ export class ProcesosComponent implements OnInit {
   getData(): any {
     this.procesosService.getData().subscribe((x: any) => {
       this.data = x;
-      this.getId(this.data[0].list[0].id);
+      console.log(this.data);
+      if(this.data && this.data.length > 0) {
+        this.getId(this.data[0].list[0].id);
+      }
     })
   }
 

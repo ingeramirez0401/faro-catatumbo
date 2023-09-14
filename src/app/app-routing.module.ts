@@ -41,23 +41,6 @@ const routes: Routes = [
   {
     path: 'procesos',
     component: ProcesosComponent,
-    children: [
-      { path: 'ip-fc-01-2021', component: P001Component },
-      { path: 'ip-fc-02-2021', component: P02Component },
-      { path: 'ip-fc-03-2021', component: P03Component },
-      { path: 'ip-fc-04-2021', component: P004Component },
-      { path: 'ip-fc-05-2021', component: P005Component },
-      { path: 'ip-fc-01-2022', component: P006Component },
-      { path: 'ip-fc-02-2022', component: P007Component },
-      { path: 'ip-fc-03-2022', component: P008Component },
-      { path: 'ip-fc-04-2022', component: P009Component },
-      { path: 'ip-fc-05-2022', component: P010Component },
-      { path: 'ip-fc-06-2022', component: P011Component },
-      { path: 'ip-fc-07-2022', component: P012Component },
-      { path: 'ip-fc-08-2022', component: P013Component },
-
-      { path: '**', pathMatch: 'full', redirectTo: 'ip-fc-08-2022' }
-    ]
   },
   {
     path: 'contacto',

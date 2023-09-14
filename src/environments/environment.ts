@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: 'http://localhost:4000'
+  api: 'http://ingeramirez0401-001-site15.atempurl.com/rest'
 };
 
 /*
